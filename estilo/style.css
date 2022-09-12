@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+:root{
+    --fonte00:Arial, Helvetica, sans-serif;
+    --cinza00: #F0EBF8;
+    --cinza01: #CCC;
+    --cinza02: #444;
+    --cinza03: #40566B;
+    --cinzaclaro: #DFDFDF;
+    --azul: #18344F;
+    --vermelho: #D80835;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte00);
+    background: url(../imagens/fundo.jpeg) repeat fixed;
+    background-size: cover;
+}
+
+h1,h3 {
+    color:var(--azul) ;
+}
+
+
+p, label {
+    color: var(--cinza02);
+}
+
+input {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--cinza01);
+    padding: 10px 0px;
+}
+
+input[type= text],input[type= number],input[type= date],input[type= file] {
+    width: 400px;
+}
+
+textarea {
+    padding: 10px 5px;
+    width: 400px;
+
+}
+
+header {
+    height: 160px;
+    padding: 20px;
+    background-color: var(--azul);
+
+}
+
+header > h3{
+    color: white;
+    font-weight: 200;
+    font-size: 20px;
+  
+}
+
+header > h3:hover{
+    text-decoration: underline;
+  
+}
+
+.form-container {
+    background-color: white;
+    box-shadow: 8px -11px -4px -8px rgba(0, 0, 0, 0.24) ;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width: 60%;
+    top:-62px;
+}
+
+.form-header {
+    border-bottom: 1px solid var(--cinzaclaro);
+    height: 45px;
+}
+
+.form-header > p {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 1px -1px rgba(0, 0, 0, 0.568);
+    color: var(--azul);
+    border-bottom: 2px solid var(--azul);
+    width: 100px;
+    height: 45px;
+    line-height: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.form-body {
+    padding: 30px;
+}
+
+.form-title {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 0px 1px -1px rgba(0, 0, 0, 0.568);
+}
+
+
+.box-input {
+    margin-bottom: 30px;
+}
+
+.required-field {
+    color: var(--vermelho);
+}
+
+.block {
+    display: block;
+}
+
+input {
+    border: 1px solid transparent;
+    border-bottom: 1px solid var(--cinza01);
+    padding: 10px 0px;
+}
+
+.optional-box {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.optional-list {
+    padding-left: 0;
+}
+
+.optional-list > li {
+    list-style-type: none;
+}
+
+.btn-submit {
+    background-color: var(--azul);
+    color: white;
+    border: 2px solid transparent;
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn-submit:hover {
+    background-color: white;
+    color:var(--azul);
+    border: 2px solid var(--azul);
+    width: 150px;
+    height: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .5s;
+}
